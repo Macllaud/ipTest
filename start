@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo Hello Fajfuclu
-ip address | grep end0 | grep inet | awk '{print $2}'
+date "+%T %d-%m-%y" >> /home/macllaud/ipTest/output.txt
+ip address | grep end0 | grep inet | awk '{print $2}' >> /home/macllaud/ipTest/output.txt
