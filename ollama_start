@@ -1,4 +1,5 @@
 #!/bin/bash
 
+sudo docker stop home-assistant
 systemctl start ollama.service
 ollama run llama3.2
