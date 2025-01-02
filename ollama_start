@@ -1,0 +1,4 @@
+#!/bin/bash
+
+systemctl start ollama.service
+ollama run llama3.2
