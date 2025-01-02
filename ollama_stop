@@ -1,4 +1,4 @@
 #!/bin/bash
 
-systemctl start ollama.service
+systemctl stop ollama.service
 sudo docker start home-assistant
