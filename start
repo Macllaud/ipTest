@@ -2,4 +2,4 @@
 
 date "+%T %d-%m-%y" >> /home/macllaud/ipTest/output.txt
 ip address | grep end0 | grep inet | awk '{print $2}' >> /home/macllaud/ipTest/output.txt
-df -H /dev/nvme0n1 --output=source,size,used,avail >> /home/macllaud/ipTest/output.txt
+df -H /dev/nvme0n1 --output=source,size,used,avail | grep /dev/nvme0n1 >> /home/macllaud/ipTest/output.txt
